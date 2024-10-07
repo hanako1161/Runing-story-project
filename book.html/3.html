@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+        <head>
+        <meta charset="utf-8">
+        </head>
+        <body>
+        <form onsubmit="return tocheckpw2()">
+        <input type="password" id="PW" required>
+        <br />
+        <input type="submit" value="확인">
+        <br />
+        <p id="pwsame" style=""></p>
+        </form>
+        <script  type="text/javascript">
+        function tocheckpw2() {
+        var goodURL  = "http://www.naver.com"
+        var pw = document.getElementById("PW").value;
+        var pwck = "20190119";
+        if (pw == pwck) {
+                location  =  goodURL
+        }
+        else  {               
+        document.getElementyById('pwsame').innerHTML = "비밀번호가 틀렸습니다."
+            }}
+        </script>
+        </body>
+        </html>
+        

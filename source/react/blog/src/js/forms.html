@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <form name="frm1">
+        <label for="uname">이름</label>
+        <input type="text" id="uname" name="uname">
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age">
+        <label for="gender">성별</label>
+        <select id="gender" name="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <button type="submit">전송</button>
+    </form>
+    <form name="frm2">
+        <input type="text">
+    </form>
+    <form name="frm3">
+        <input type="text">
+    </form>
+    <script>
+        // console.log(document.forms);
+        console.log(document.frm1);
+        console.log("----------------------");
+        console.log(document.frm1.elements[0]);
+        console.log("----------------------");
+        console.log(document.frm1.elements['uname']);
+        console.log("----------------------");
+        console.log(document.frm1.elements['age']);
+        console.log("----------------------")
+        console.log(document.frm1.elements['gender']);
+    </script>
+</body>
+</html>
