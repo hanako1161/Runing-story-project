@@ -38,3 +38,33 @@ background-size: cover;
 background-attachment: fixed;
 height: 150px;
 }
+
+@media screen and ( max-width:1140px){
+    main .container{
+        width: 576px;
+    }
+    section .container{
+        width: 400px;
+    }
+    section .do-me .do-inner{
+        width: 100%;
+        margin-right: 0;
+    }
+    section .do-me .do-inner:nth-child(2n+1){
+        margin-right: 4%;
+    }
+}
+@media screen and (max-width:400px) {
+    main.container{
+        width: 320px;
+    }
+    section .container{
+        width: 320px;
+    }
+    main h4{
+        font-size: 1.5rem;
+    }
+    section .title h2{
+        font-size: 3rem;
+    }
+} 

@@ -1,3 +1,12 @@
+@media screen and (max-width:1140px) {
+    section .portfolio-me .portfolio-inner{
+        margin-right: 0;
+    }
+    section .portfolio-me .portfolio-inner:nth-child(2n+1){
+        margin-right:4%;
+    }
+}
+
 section.portfolio::after{
     content: "";
     display: block;
