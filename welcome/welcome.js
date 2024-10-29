@@ -38,11 +38,22 @@ function deleteTxt(){
         spanE1.textContent += currentTxt.shift();
         if(currentTxt.length !==0){
             setTimeout(writeTxt, Math.floor(Math.random() * 100));
-        }esle{
+        }else{
             currentTxt = spanE1.textContent.split("");
             setTimeout(deleteTxt, 3000)
         }
     }
 function deleteTxt(){
     currentTxt.pop();
+    spanE1.textContent = currentTxt.join("");
+    if(currentTxt.length !==0){
+        setTimeout(deleteTxt.Math.floor(Math.random() * 100));
+    }else{
+        index = (index + 1) % txtArr.length;
+        currentTxt = txtArr[index].split("");
+        console.log(currentTxt);
+        writeTxt();
+    }
 }
+writeTxt();
+})();
